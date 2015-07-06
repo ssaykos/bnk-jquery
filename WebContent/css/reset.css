@@ -11,7 +11,7 @@ html {
     font-size: 10px 		
 }
  
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p,
+body, div, dl, dt, dd,  h1, h2, h3, h4, h5, form, fieldset, p,
     button {
     margin: 0; 		/* 프레임 사이를 띄우는게 margin 내 살을 파서 깎아 내는게 padding */
     padding: 0; 	/*  margin 10,20,30,40 << 위에서부터 시계방향으로 앞에 두개만 주면 위아래, 양옆 */
@@ -36,7 +36,7 @@ img, fieldset, iframe {
 }
  
 li {
-    list-style: none
+  /*   list-style: none */
 }
  
 input, select, button {
@@ -120,7 +120,7 @@ footer {
     overflow: hidden;
   /*   background-color: #CCF */
 }
-nav ul {
+/* nav ul {
     list-style:none;
     float:right;
 }
@@ -128,4 +128,4 @@ nav ul {
 nav ul li {
     float:left;
     margin:0 20px;
-}
+} */

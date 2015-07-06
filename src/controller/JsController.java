@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet({"/js/hello.do"})
+@WebServlet({"/js/hello.do","/js/var.do"})
 public class JsController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -25,6 +25,7 @@ public class JsController extends HttpServlet {
 		
 		switch (path) {
 		case "js/hello.do": url="hello.jsp"; break;
+		case "js/var.do" : url = "var.jsp";break;
 	
 		
 		default: break;

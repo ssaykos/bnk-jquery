@@ -15,9 +15,9 @@
 	<div class="outbox">
 	<div class="box">
 		<h1>Javascript</h1>a
-		<ul>
+		<ul> 
 			<li><a href="${context}/js/hello.do"> Javascript 소개 </a></li>
-			<li></li>
+			<li><a href="${context}/js/var.do">변수</a></li>
 			<li></li>
 			<li></li>
 			<li></li>
