@@ -18,11 +18,13 @@
 		<ul> 
 			<li><a href="${context}/js/hello.do"> Javascript 소개 </a></li>
 			<li><a href="${context}/js/var.do">변수</a></li>
+			<li><a href="${context}/js/operator.do">연산자</a></li>
 			<li><a href="${context}/js/func.do">함수</a></li>
 			<li><a href="${context}/js/object.do">객체기반언어</a></li>
-			<li><a href="${context}/js/bom.do">브라우저 객체 모델</a></li>
-			<li></li>
-			<li></li>
+			<li><a href="${context}/js/bom.do">브라우저 객체 모델[BOM]</a></li>
+			<li><a href="${context}/js/dom.do">다큐먼트 객체 모델[DOM]</a></li>
+			<li><a href="${context}/js/closure.do">클로저 문법</a></li>
+			<li><a href="${context}/js/pattern.do">패턴</a></li>
 		</ul>
 	</div>
 	<div class="box">
@@ -30,7 +32,7 @@
 	
 		<h3> jQuery</h3>
 		<ul>
-			<li> <a href="${context}/jquery/ch01.do"> Chapter 01. jQuery 기본 </a> </li>
+			<li> <a href="${context}/jquery/hello.do"> Hello jQuery </a> </li>
 			<li> <a href="${context}/jquery/ch02.do"> Chapter 02. 셀렉터 다루기 </a> </li>
 			<li> <a href="${context}/jquery/ch03.do"> Chapter 03. 어트리뷰트 다루기</a> </li>
 			<li> <a href="${context}/jquery/ch04.do"> Chapter 04. DOM 탐색하기</a> </li>

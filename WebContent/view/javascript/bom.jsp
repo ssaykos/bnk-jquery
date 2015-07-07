@@ -14,13 +14,13 @@
 		<div class="pad box">
 			<ul>
 				<li>
-					경고창 <button onclick="javascript:WindowController.alert()">경고창</button>
+					경고창 <button onclick="javascript:windowController.alert()">경고창</button>
 				</li>
 				<li>
-					확인창 <button onclick="javascript:WindowController.confirm()">확인창</button>
+					확인창 <button onclick="javascript:windowController.confirm()">확인창</button>
 				</li>
 				<li>
-					입력창(프롬프트) <button onclick="javascript:WindowController.prompt()">입력창</button>
+					입력창(프롬프트) <button onclick="javascript:windowController.prompt()">입력창</button>
 				</li>
 			</ul>
 		</div>
@@ -30,7 +30,7 @@
 			<ul>
 				<li>
 					open("문서명","창이름","속성") // 새창열기
-					<button onclick="WindowController.open()">팝업창</button>
+					<button onclick="windowController.open()">팝업창</button>
 				</li>
 				<li>
 					close() // 창 닫기, 거의 사용 하지 않음
@@ -40,16 +40,16 @@
 	</div>
 	<h3>2. History 객체</h3>
 	<div class="box pad">
-		<button onclick="WindowController.f5()">새로고침</button>
-		<button onclick="WindowController.goBack()">뒤로가기</button>
+		<button onclick="windowController.f5()">새로고침</button>
+		<button onclick="windowController.goBack()">뒤로가기</button>
 	</div>
 	<h3>3. Location 객체</h3>
 	<div class="box pad">
-		<button onclick="WindowController.href()">홈으로</button>
+		<button onclick="windowController.href()">홈으로</button>
 	</div>
 </div>
 <script type="text/javascript">
-	var WindowController = {
+	var windowController = {
 			alert : function(){
 				alert('경고창은 메시지만 전달');
 			},

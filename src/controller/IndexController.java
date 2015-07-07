@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class IndexController
  */
-@WebServlet({"/jquery/ch01.do","/jquery/ch02.do","/jquery/ch03.do",
+@WebServlet({"/jquery/hello.do","/jquery/ch02.do","/jquery/ch03.do",
 	"/jquery/ch04.do","/jquery/ch05.do","/jquery/ch06.do",
 	"/jquery/ch07.do","/jquery/ch08.do","/jquery/ch09.do",
 	"/jquery/ch10.do","/jquery/ch11.do","/index.do"
@@ -29,7 +29,7 @@ public class IndexController extends HttpServlet {
 		String url = "";
 		
 		switch (path) {
-		case "jquery/ch01.do": url="ch01"; break;
+		case "jquery/hello.do": url="hello.jsp"; break;
 		case "jquery/ch02.do": url="ch02"; break;
 		case "jquery/ch03.do": url="ch03"; break;
 		case "jquery/ch04.do": url="ch04"; break;
@@ -46,7 +46,7 @@ public class IndexController extends HttpServlet {
 		}
 		if (path.substring(0, 5).equals("jquer")) {
 			RequestDispatcher dispatcher 
-				= request.getRequestDispatcher("/jquery/"+url+"/index.html");
+				= request.getRequestDispatcher("/view/jquery/"+url);
 			dispatcher.forward(request, response);
 		} else {
 			RequestDispatcher dispatcher 

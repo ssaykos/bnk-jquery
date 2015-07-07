@@ -11,7 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet({"/js/hello.do","/js/var.do","/js/func.do",
-			"/js/object.do","/js/bom.do"
+			"/js/object.do","/js/bom.do","/js/operator.do","/js/dom.do",
+			"/js/closure.do","/js/pattern.do"
 			})
 public class JsController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -31,8 +32,10 @@ public class JsController extends HttpServlet {
 		case "js/func.do" : url = "func.jsp";break;
 		case "js/object.do" : url = "object.jsp";break;
 		case "js/bom.do" : url = "bom.jsp";break;
-	
-		
+		case "js/operator.do": url = "operator.jsp"; break;
+		case "js/dom.do": url = "dom.jsp"; break;
+		case "js/closure.do": url = "closure.jsp"; break;
+		case "js/pattern.do": url = "pattern.jsp"; break;
 		default: break;
 		}
 	
