@@ -18,8 +18,9 @@
 		<ul> 
 			<li><a href="${context}/js/hello.do"> Javascript 소개 </a></li>
 			<li><a href="${context}/js/var.do">변수</a></li>
-			<li></li>
-			<li></li>
+			<li><a href="${context}/js/func.do">함수</a></li>
+			<li><a href="${context}/js/object.do">객체기반언어</a></li>
+			<li><a href="${context}/js/bom.do">브라우저 객체 모델</a></li>
 			<li></li>
 			<li></li>
 		</ul>

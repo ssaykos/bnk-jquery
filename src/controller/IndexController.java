@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet({"/jquery/ch01.do","/jquery/ch02.do","/jquery/ch03.do",
 	"/jquery/ch04.do","/jquery/ch05.do","/jquery/ch06.do",
 	"/jquery/ch07.do","/jquery/ch08.do","/jquery/ch09.do",
-	"/jquery/ch10.do","/jquery/ch11.do"
+	"/jquery/ch10.do","/jquery/ch11.do","/index.do"
 	})
 public class IndexController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -40,6 +40,7 @@ public class IndexController extends HttpServlet {
 		case "jquery/ch09.do": url="ch09"; break;
 		case "jquery/ch10.do": url="ch10"; break;
 		case "jquery/ch11.do": url="ch11"; break;
+		case "index.do": url="/index.jsp"; break;
 		
 		default: break;
 		}
