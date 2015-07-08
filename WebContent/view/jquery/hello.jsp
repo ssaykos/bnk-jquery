@@ -32,8 +32,52 @@
 			<li>compress 버전이 압축되어 있기 때문에 용량이나 속도면에서는 더 좋다</li>
 		</ul>
 		<h3> jQuery 는 대소문자를 구분한다.</h3>
-		<h1> $(document).ready(function(){...});</h1>
 		<h3> 함수, 문서의 준비 및 명령어 시작</h3>
+		<h1> $(document).ready(function(){...});</h1>
+		<h3>jQuery 함수</h3>
+		<h4>jQuery() 또는 $() 을 말하며, DOM 에서 엘리먼트를 선택하기 <br />
+			위해 사용한다. 이 함수는 jQuery 래퍼(wrapper)라고도 불리며, <br />
+			메소드의 매개변수로 CSS 셀렉터 표현식을 문자열 형태로 기술한다. <br />
+			DOM 을 탐색하여, 맞는 엘리먼트를 반환하고 결과값으로 객체를 얻어준다. <br />
+			이렇게 얻어진 객체를 jQuery 확장 객체 집합 또는 jQuery 객체라고 부른다. 
+		  </h4>
+		  <div class="pad"></div>
+		  <h3>자바스크립트에서 객체</h3>
+		  <h4>객체는 기능(메소드)과 속성(어트리뷰트) 에 더붙여 <mark>이벤트</mark>로 구성된다.</h4>
+		  기능과 속성은 자바 객체의 기본 정의와 일정부분 동일하고 <br />
+		  이벤트는 <mark>외부에서 가해지는 사건</mark> 을 뜻한다.
+		  <div class="pad"></div>
+		  <h3> 콜백함수 </h3>
+		  <h4> 개발자가 지정해 놓으면 <mark>이벤트에 따라</mark> 자동으로 호출되는 함수</h4>
+		  <h3> $ 의 의미</h3>
+		  <h4> $는 jQuery 의 별칭으로 사용하는 기호이다.</h4>
+		  $ 기호를 사용하여 () 안에 있는 매개변수로 셀렉터를 기술한 후 <br />
+		  jQuery  객체집합 ( 배열 = 컬렉션) 을 얻어낼 수 있다.
+	</div>
+	<div class="box">
+		<h1>Chapter 01. jQuery 기본</h1>
+		<ol>
+			<li><button id="helloNo1">페이지가 렌더링된 후 CSS 변경하기</button>  </li>
+		</ol>
+		<div  id="hello">
+			<h3>Hello jQuery !!</h3>
+		</div>
 	</div>
 </div>
+<script>
+	$(document).ready(function() {
+		$('#helloNo1').click(function() {
+			hello.render(); // 아직 만들지 않은 자스 객체와 메소드
+		});
+	});
+	
+</script>
+
+
+
+
+
+
+
+
 
