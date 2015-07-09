@@ -70,6 +70,11 @@
 			hello.render(); // 아직 만들지 않은 자스 객체와 메소드
 		});
 	});
+	var hello = {
+		render : function(){
+			$('div#hello').addClass('fontColorRed');
+		}
+	}
 	
 </script>
 

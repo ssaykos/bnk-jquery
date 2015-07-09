@@ -12,10 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class IndexController
  */
-@WebServlet({"/jquery/hello.do","/jquery/ch02.do","/jquery/ch03.do",
-	"/jquery/ch04.do","/jquery/ch05.do","/jquery/ch06.do",
-	"/jquery/ch07.do","/jquery/ch08.do","/jquery/ch09.do",
-	"/jquery/ch10.do","/jquery/ch11.do","/index.do"
+@WebServlet({"/index.do","/jquery/hello.do","/jquery/selector.do",
+	"/jquery/attr.do","/jquery/traversing.do"
 	})
 public class IndexController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -30,16 +28,10 @@ public class IndexController extends HttpServlet {
 		
 		switch (path) {
 		case "jquery/hello.do": url="hello.jsp"; break;
-		case "jquery/ch02.do": url="ch02"; break;
-		case "jquery/ch03.do": url="ch03"; break;
-		case "jquery/ch04.do": url="ch04"; break;
-		case "jquery/ch05.do": url="ch05"; break;
-		case "jquery/ch06.do": url="ch06"; break;
-		case "jquery/ch07.do": url="ch07"; break;
-		case "jquery/ch08.do": url="ch08"; break;
-		case "jquery/ch09.do": url="ch09"; break;
-		case "jquery/ch10.do": url="ch10"; break;
-		case "jquery/ch11.do": url="ch11"; break;
+		case "jquery/selector.do": url="selector.jsp"; break;
+		case "jquery/attr.do": url="attr.jsp"; break;
+		case "jquery/traversing.do": url="traversing.jsp"; break;
+		
 		case "index.do": url="/index.jsp"; break;
 		
 		default: break;

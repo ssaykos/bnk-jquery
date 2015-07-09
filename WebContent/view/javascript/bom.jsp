@@ -47,6 +47,10 @@
 	<div class="box pad">
 		<button onclick="windowController.href()">홈으로</button>
 	</div>
+	<h3>4. 팝업창으로 관리자 체크</h3>
+	<div class="box">
+		<button onclick="windowController.checkAdmin()">관리자 체크</button>
+	</div>
 </div>
 <script type="text/javascript">
 	var windowController = {
@@ -70,6 +74,19 @@
 			},
 			goBack : function(){
 				history.go(-1);  /* 뒤로가기 */
+			},
+			checkAdmin : function() {
+				var isAdmin = confirm('관리자 입니까?');
+				if (!isAdmin) {
+					document.write('일반사용자입니다.');
+				} else {
+					var password = prompt('관리자 비번을 입력하세요');
+					if (password == 1234) {
+						document.write('관리자 인증 되었습니다.');
+					} else {
+						document.write('관리자 비번이 틀렸습니다.');
+					}
+				}
 			}
 			
 			
